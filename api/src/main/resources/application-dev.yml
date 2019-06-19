@@ -1,0 +1,7 @@
+spring:
+  profiles:
+    active: dev
+    include: common-dev
+
+server:
+  port: 10001
