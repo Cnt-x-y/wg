@@ -72,7 +72,7 @@
         <appender-ref ref="STDOUT"/>
     </root>
     <!-- 级别依次为【从高到低】：FATAL > ERROR > WARN > INFO > DEBUG > TRACE  -->
-    <logger name="liugoulog" level="DEBUG">
+    <logger name="wugoulog" level="DEBUG">
         <appender-ref ref="wugoulog"/>
     </logger>
     <logger name="liugoulog" level="DEBUG">
