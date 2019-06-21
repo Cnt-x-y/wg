@@ -22,7 +22,7 @@ public class ApiApplication implements CommandLineRunner {
     public void run(String... args) throws Exception {
         Logger logger = LoggerFactory.getLogger(ApiApplication.class);
         for (int i = 0; i < 2; i++) {
-            logger.error("启动了wg. id={}; name=Ryan-{};", i, i);
+            logger.error("user = {},post_date = {},message = {}", i, i,i);
         }
     }
 }
