@@ -20,9 +20,9 @@ public class ApiApplication implements CommandLineRunner {
 
     @Override
     public void run(String... args) throws Exception {
-       /* Logger logger = LoggerFactory.getLogger(ApiApplication.class);
+        Logger logger = LoggerFactory.getLogger(ApiApplication.class);
         for (int i = 0; i < 2; i++) {
-            logger.error("something wrong. id={}; name=Ryan-{};", i, i);
-        }*/
+            logger.error("启动了wg. id={}; name=Ryan-{};", i, i);
+        }
     }
 }

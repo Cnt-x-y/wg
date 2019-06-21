@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration>
+<configuration>
+    <include resource="org/springframework/boot/logging/logback/base.xml" />
+
+    <!-- 开发环境. 多个环境使用逗号隔开. -->
+    <!-- 不同的环境使用不同的配置 使用springProfile -->
+    <springProfile name="dev">
+        <appender name="LOGSTASH" class="net.logstash.logback.appender.LogstashTcpSocketAppender">
+            <destination>47.104.168.217:9600</destination>
+            <!-- encoder必须配置,有多种可选 -->
+            <encoder charset="UTF-8" class="net.logstash.logback.encoder.LogstashEncoder" >
+                <!-- "appname":"yang_test" 的作用是指定创建索引的名字时用，并且在生成的文档中会多了这个字段  -->
+                <customFields>{"appname":"wg_dev_log"}</customFields>
+            </encoder>
+        </appender>
+        <root level="INFO">
+            <appender-ref ref="LOGSTASH" />
+        </root>
+    </springProfile>
+</configuration>

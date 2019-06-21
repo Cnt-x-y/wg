@@ -5,3 +5,5 @@ spring:
     restart:
       enabled: true
       additionalPaths: src/main/java
+logging:
+  config: classpath:logback-spring.xml
