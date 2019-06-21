@@ -76,6 +76,6 @@
         <appender-ref ref="wugoulog"/>
     </logger>
     <logger name="liugoulog" level="DEBUG">
-        <appender-ref ref="wugoulog"/>
+        <appender-ref ref="liugoulog"/>
     </logger>
 </configuration>
