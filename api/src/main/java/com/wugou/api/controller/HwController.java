@@ -14,9 +14,12 @@ public class HwController {
 
     Logger logger = LoggerFactory.getLogger("wugoulog");
 
+    Logger liugoulogger = LoggerFactory.getLogger("liugoulog");
+
     @GetMapping("/hw")
     public String hw() {
         logger.error("你好，五狗 ！你要是乖，给你买条街，要是不乖，给你头打歪");
+        liugoulogger.info("hello,青狗");
         return "你好，五狗 ！你要是乖，给你买条街，要是不乖，给你头打歪";
     }
 }
