@@ -5,3 +5,8 @@ spring:
 
 server:
   port: 10001
+
+management:
+  endpoint:
+    shutdown:
+      enabled: true
