@@ -18,7 +18,9 @@ public class HwController {
 
     @GetMapping("/hw")
     public String hw() {
-        return "hello world!";
+        logger.error("这是一条日志");
+        liugoulogger.info("这是一条日志");
+        return "hello,world";
     }
 
 }
